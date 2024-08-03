@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employees</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>New Employees</h1>
+        <form id="employeeForm">
+           <div class="details"> 
+            <div class="form-group">
+                <label for="name">Enter Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="profession">Enter Profession</label>
+                <input type="text" id="profession" name="profession">
+            </div>
+            <div class="form-group">
+                <label for="age">Enter Age</label>
+                <input type="number" id="age" name="age">
+            </div>
+        </div>
+            <button type="button" onclick="addEmployee()">Add User</button><br><br>
+        </form>
+        <div id="message"></div>
+        <h2>Added Employees</h2>
+        <div id="employeeList" class="employee-list">
+            You have 0 employees.
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
